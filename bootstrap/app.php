@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . '/helpers.php'; // add 20181128
+
 /*
 |--------------------------------------------------------------------------
 | Create The Application
