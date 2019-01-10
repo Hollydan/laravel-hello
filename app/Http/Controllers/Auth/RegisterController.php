@@ -50,8 +50,12 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|min:6|confirmed',
-        ]);
+            'password' => 'required|string|min:5|confirmed',
+			'captcha' => 'required|captcha',
+		], [
+			'captcha.required' => 'captcha is required!',
+			'captcha.captcha' => 'captcha is invalid',
+		]); // add captcha 20190110
     }
 
     /**

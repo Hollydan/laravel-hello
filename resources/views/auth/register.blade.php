@@ -61,6 +61,22 @@
                             </div>
                         </div>
 
+						<!-- add start 20190109 -->
+						<div class="form-group{{ $errors->has('captcha') ? 'has-error' : '' }}">
+							<label for='captcha' class='col-md-4 control-label'>Captcha</label>
+						
+							<div class='col-md-6'>
+								<input id='captcha' class='form-control' name='captcha'/>
+								<img class='thumbnail captcha' src="{{ captcha_src('flat') }}" onclick="this.src='/captcha/flat?'+Math.random()" />
+								@if($errors->has('captcha'))
+									<span class='help-block'>
+										<strong>{{ $errors->first('captcha') }}</strong>
+									</span>
+								@endif
+							</div>
+						</div>
+						<!-- add end 20190109 -->
+
                         <div class="form-group">
                             <div class="col-md-6 col-md-offset-4">
                                 <button type="submit" class="btn btn-primary">

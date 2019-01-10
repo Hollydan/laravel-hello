@@ -8380,3 +8380,9 @@ body {
   color: #c1c1c1;
 }
 
+.register-page img.captcha {
+  margin-top: 10px;
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+

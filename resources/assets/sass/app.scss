@@ -8,7 +8,7 @@
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
-// add 2018/12/19/1738
+// add start 2018/12/19/1738
 
 /* universal */
 
@@ -53,3 +53,14 @@ body {
 		}
 	}
 }
+// add end 2018/12/19/1738
+
+// add start 20190110
+.register-page {
+	img.captcha {
+		margin-top: 10px;
+		margin-bottom: 0px;
+		cursor: pointer;
+	}
+}
+// add end 20190110
