@@ -26,6 +26,9 @@
 					
 					<ul class='dropdown-menu' role='menu'>
 						<li>
+							<a href="{{ route('users.edit', Auth::id()) }}">Edit Profile</a>
+						</li>
+						<li>
 							<a href="{{ route('logout') }}" onclick="event.preventDfault();document.getElementById('logout-form').submit();">logout</a>
 							<form id='logout-form' action="{{ route('logout') }}" method='POST' style='display:none;'>
 								{{ csrf_field() }}
