@@ -39,3 +39,5 @@ Route::post('password/reset', 'Auth\ResetPasswordController@reset');
 
 Route::resource('users', 'UsersController', ['only' => ['show', 'update', 'edit']]); // add 20190110
 
+Route::resource('topics', 'TopicController'); // add 20190209
+
