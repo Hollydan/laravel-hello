@@ -17,8 +17,8 @@
 		<div class='panel panel-default'>
 			<div class='panel-heading'>
 				<ul class='nav nav-pills'>
-					<li role='presentation' class='active'><a href='#'>Last Reply</a></li>
-					<li role='presentation'><a href='#'>Latest Publish</a></li>
+					<li role='presentation' class="{{ active_class(!if_query('order', 'recent')) }}"><a href="{{ Request::url() }}?order=default">Last Reply</a></li>
+					<li role='presentation' class="{{ active_class(if_query('order', 'recent')) }}"><a href="{{ Request::url() }}?order=recent">Latest Publish</a></li>
 				</ul>
 			</div>
 			<div class='panel-body'>
