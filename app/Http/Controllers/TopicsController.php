@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Topic;
 
-class TopicController extends Controller
+class TopicsController extends Controller
 {
 
 	public function index(Request $request, Topic $topic){
