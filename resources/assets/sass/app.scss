@@ -64,3 +64,39 @@ body {
 	}
 }
 // add end 20190110
+
+// add start 20190209
+.topics-index-page {
+	.topic-list {
+		.nav > li > a {
+			position: relative;
+			display: block;
+			padding: 5px 14px;
+			font-size: 0.9em;
+		}
+
+		a {
+			color: #444;
+		}
+
+		.meta {
+			font-size: 0.9em;
+			color: #b3b3b3;
+			a {
+				color: #b3b3b3;
+			}
+		}
+
+		.bsdge {
+			background-color: #d8d8d8;
+		}
+
+		hr {
+			margin-top: 12px;
+			margin-bottom: 12px;
+			border: 0;
+			border-top: 1px solid #dcebf5;
+		}
+	}
+}
+// add end 20190209
