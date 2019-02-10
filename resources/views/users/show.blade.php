@@ -36,7 +36,11 @@
 			<hr>
 			<div class='panel panel-default'>
 				<div class='panel-body'>
-					No Data!
+					<ul class='nav nav-tabs'>
+						<li class='active'><a href="">Your Topics</a></li>
+						<li><a href="">Your Replies</a></li>
+					</ul>
+					@include('users._topics', ['topics' => $user->topics()->recent()->paginate(5)])
 				</div>
 			</div>
 		</div>
